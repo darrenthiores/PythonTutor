@@ -1,0 +1,28 @@
+"""
+untuk menginstall paket --> pip3 install <nama paket>
+untuk menghapus paket --> pip3 uninstall <nama paket>
+untuk meng-upgrade versi paket --> pip3 install <nama paket> --upgrade
+untuk mengecek lokasi penyimpanan paket --> python -m site
+--
+paket yg diinstall menggunakan pip3 akan terinstall ke direktori home, sedangkan
+paket yg diinstall menggunakan sudo pip3 akan terinstall ke direktori local
+--
+untuk melihat daftar paket yg sudah terinstall --> pip list
+untuk melihat informasi paket --> pip show <nama paket>
+--
+untuk mencari paket --> pip search <kata kunci>
+alternatif lain untuk mencari paket --> di website : https://pypi.org
+--
+Pembekuan paket
+--> berfungsi untuk mengunci nama paket beserta versinya
+dilakukan saat menggunakan virtual environment saat membuat app
+dengan tujuan orang lain akan menginstall versi paket yang sama
+--> untuk membekukan paket >> pip freeze
+setelah dibekukan, hasil outputnya disimpan kedalam file .txt
+--> untuk menyimpan output >> pip freeze > <nama file>.txt
+setelah perintah dilakukan maka file baru bernama <nama file>.txt akan tercipta dan berisi 
+daftar paket serta versinya
+--> untuk menginstall semua paket yang terdaftar didalam file .txt >> pip3 install -r <nama file>.txt
+setelah perintah diatas dilakukan, maka semua paket beserta versinya yg berada di file .txt
+akan terinstall didalam komputer
+"""
